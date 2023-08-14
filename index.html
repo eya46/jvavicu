@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/favicon.png">
+    <title>Jvav</title>
+    <style type="text/css">
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        #title, #emoji {
+            font-size: 5em;
+        }
+
+        #link {
+            font-size: 5em;
+            text-decoration: underline;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                color: white;
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            body {
+                color: black;
+            }
+        }
+    </style>
+    <script type="text/javascript">
+        var data;
+
+        function change() {
+            var emoji = choiceA(data["emoji"]);
+            document.title = "Jvav" + emoji;
+            document.getElementById('emoji').innerText = emoji;
+            document.getElementById('title').innerText = (
+                data["i18n"][
+                    (navigator.language || navigator.browserLanguage).toLowerCase()
+                    ] || "Feels inferior to"
+            );
+            var jvav = choiceO(data["jvav"])
+            var link = document.getElementById('link');
+            link.href = choiceA(data["jvav"][jvav]);
+            link.innerText = jvav;
+        }
+
+        function choiceO(obj) {
+            return Object.keys(obj)[Math.floor(Math.random() * Object.keys(obj).length)];
+        }
+
+        function choiceA(arr) {
+            return typeof arr == "string" ? arr : arr[Math.floor(Math.random() * arr.length)];
+        }
+
+        window.onload = function () {
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', 'data.json', true);
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    data = JSON.parse(xhr.responseText);
+                    change();
+                }
+            };
+            xhr.send();
+        };
+    </script>
+</head>
+<body>
+<div class="container">
+    <h1 id="title" style="display: inline">
+        Your browser does not seem to support
+    </h1>
+    <span id="emoji" onclick="change()"></span>
+    <br><br><br>
+    <a id="link" target="_blank" href="https://developer.mozilla.org/docs/Web/JavaScript">JavaScript</a>
+</div>
+</body>
+</html>

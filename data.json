@@ -1,0 +1,64 @@
+{
+  "emoji": [
+    "\uD83E\uDD23",
+    "\uD83E\uDD14"
+  ],
+  "i18n": {
+    "zh-cn": "感觉不如",
+    "zh-tw": "感覺不如",
+    "en": "Feels inferior to",
+    "ja": "より劣っていると感じる",
+    "es": "Se siente inferior a",
+    "fr": "Se sent moins que",
+    "de": "Fühlt sich unterlegen gegenüber",
+    "ru": "Чувствует себя менее качественным, чем",
+    "ko": "더 못하다고 느낍니다",
+    "pt": "Sente-se inferior a",
+    "it": "Si sente inferiore a",
+    "nl": "Voelt zich minderwaardig aan",
+    "sv": "Känner sig underlägsen än",
+    "ar": "يشعر بالدونية لـ",
+    "tr": "Daha kötü hissediyor",
+    "vi": "Cảm thấy thấp kém hơn",
+    "th": "รู้สึกต่ำกว่า"
+  },
+  "jvav": {
+    "Python": "https://www.python.org/",
+    "C": [
+      "https://www.iso.org/standard/74528.html",
+      "https://www.w3schools.com/c/"
+    ],
+    "C++": "https://isocpp.org/",
+    "C#": "https://dotnet.microsoft.com/languages/csharp",
+    "Visual Basic": "https://learn.microsoft.com/dotnet/visual-basic/",
+    "JavaScript": [
+      "https://developer.mozilla.org/docs/Web/JavaScript",
+      "https://www.ecma-international.org/ecma-262/"
+    ],
+    "PHP": "https://www.php.net/",
+    "R": "https://www.r-project.org/",
+    "Go": "https://go.dev/",
+    "Ruby": "https://www.ruby-lang.org/",
+    "Rust": "https://www.rust-lang.org/",
+    "Swift": "https://www.swift.org/",
+    "Objective-C": "https://developer.apple.com/documentation/objectivec",
+    "Kotlin": "https://kotlinlang.org/",
+    "TypeScript": "https://www.typescriptlang.org/",
+    "Scala": "https://www.scala-lang.org/",
+    "Perl": "https://www.perl.org/",
+    "Haskell": "https://www.haskell.org/",
+    "Lua": "https://www.lua.org/",
+    "Dart": "https://dart.dev/",
+    "Julia": "https://julialang.org/",
+    "Fortran": "https://fortran-lang.org/",
+    "Lisp": "https://lisp-lang.org/",
+    "helang": [
+      "https://github.com/kifuan/helang",
+      "https://github.com/Cyl18/HeLangSharp",
+      "https://github.com/imtsuki/helang-rs",
+      "https://github.com/LanceLRQ/helang-go",
+      "https://github.com/Rotten-LKZ/hescript",
+      "https://github.com/shaokeyibb/HeLangKotlinScriptImpl"
+    ]
+  }
+}
