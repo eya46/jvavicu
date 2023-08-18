@@ -22,7 +22,12 @@
     "vi": "Cảm thấy thấp kém hơn",
     "th": "รู้สึกต่ำกว่า"
   },
-  "jvav": {
+  "lang": {
+    "\uD83E\uDD23": "https://github.com/eya46/jvavicu",
+    "Jvav": [
+      "https://github.com/JVAV-Lang/Jvav",
+      "https://www.zhihu.com/question/388824198"
+    ],
     "Python": "https://www.python.org/",
     "C": [
       "https://www.iso.org/standard/74528.html",

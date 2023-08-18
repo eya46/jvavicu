@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Jvav,jvav,jvav.icu">
+    <meta name="description" content="感觉不如Jvav">
+    <meta name="generator" content="https://github.com/eya46/jvavicu">
     <link rel="icon" href="/favicon.png">
     <title>Jvav</title>
     <style type="text/css">
@@ -53,10 +56,10 @@
                     (navigator.language || navigator.browserLanguage).toLowerCase()
                     ] || "Feels inferior to"
             );
-            var jvav = choiceO(data["jvav"])
+            var lang = choiceO(data["lang"])
             var link = document.getElementById('link');
-            link.href = choiceA(data["jvav"][jvav]);
-            link.innerText = jvav;
+            link.href = choiceA(data["lang"][lang]);
+            link.innerText = lang;
         }
 
         function choiceO(obj) {
@@ -72,6 +75,7 @@
             xhr.open('GET', 'data.json', true);
             xhr.onreadystatechange = function () {
                 if (xhr.readyState === 4 && xhr.status === 200) {
+                    document.getElementById('tip').style.display = "none";
                     data = JSON.parse(xhr.responseText);
                     change();
                 }
@@ -88,6 +92,7 @@
     <span id="emoji" onclick="change()"></span>
     <br><br><br>
     <a id="link" target="_blank" href="https://developer.mozilla.org/docs/Web/JavaScript">JavaScript</a>
+    <h2 id="tip">(or load <a target="_blank" href="/data.json">data.json</a> failed)</h2>
 </div>
 </body>
 </html>
